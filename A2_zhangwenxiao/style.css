@@ -1,0 +1,142 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+body{
+	background:#ccc;
+}
+.header{
+	height:60px;
+	width:100%;
+	background:#323334;
+	display:table;
+	vertical-align:middle;
+	position:fixed;
+	top:0;
+}
+.header span{
+	display:table-cell;
+	vertical-align:middle;
+	color:#fff;
+	font-size:20px;
+}
+.header nav {
+	float:right;
+	height:60px;
+}
+.header nav li{
+	float:left;
+	height:60px;
+	line-height:60px;
+	list-style:none;
+}
+.header nav a{
+	text-decoration: none;
+	font-size:13px;
+	display:inline-block;
+	width:85px;
+	color:#fff;
+}
+#div1{
+	border:1px solid #ccc;
+	padding:10px;
+	margin-bottom: 10px;
+	margin-top:70px;
+}
+#div1 *{
+	padding:10px;
+}
+#contain{
+	margin:10px;
+	background:#fff;
+}
+#div2{
+	margin:10px;
+	padding:10px;
+	border:1px solid #ccc;
+}
+#div2 a{
+	text-decoration:none;
+	color:#6cf;
+}
+#div2 img{
+	opacity:0.5;
+}
+#div2 img:hover{
+	opacity:1.0;
+}
+#div3{
+	border:1px solid #ccc;
+	margin:10px;
+	padding:10px;
+}
+#div3 ul {
+	height:105px;
+	list-style:none;
+}
+#div3 ul li{
+	height:30px;
+	line-height:30px;
+	font-size:18px;
+}
+#div3 ol{
+	list-style:none;
+	list-style-image:url(1.png);
+}
+#div4{
+	border:1px solid #ccc;
+	margin:10px;
+	padding:10px;
+}
+#div4 table{
+	width:100%;
+	border-color:#aaa;
+	border:1px dashed;
+}
+#div4 table thead{
+	background:#323334;
+	color:#fff;
+}
+#div4 table tbody{
+	text-align:center;
+	background:#ccc;
+}
+#div4 table tr:hover{
+	background:#ddd;
+	text-align:center;
+}
+#div4 table tfoot{
+	background:#eee;
+	text-align:center;
+}
+#div5{
+	border:1px solid #ccc;
+	margin:10px;
+	padding:10px;
+}
+#div5 h3{
+	text-align:center;
+}
+#div5 form{
+	margin:20px auto;
+}
+#div5 form input{
+	margin:10px;
+}
+#div5 .btn{
+	background:#6cf;
+	width:150px;
+	height:50px;
+	border-radius:5px;
+	cursor:pointer;
+}
+#div5 .btn:hover{
+	background:#6ef;
+}
+footer{
+	height:70px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	line-height:70px;
+}
