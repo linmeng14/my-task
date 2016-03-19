@@ -32,8 +32,8 @@ body{
 }
 #main #main-top{
 	padding-top:35px;
-	padding-bottom:35px;
-	position:relative;
+	/* padding-bottom:35px;
+ */	position:relative;
 	height:600px;
 }
 #main #main-top #right{
