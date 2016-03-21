@@ -602,14 +602,13 @@ body{
 	font-size: 13px;
 	padding-top: 10px;
 }
-.form-text input:hover {
-	border:1px solid #aaa;
-	outline:2px;
+/* .form-text input:hover {
+	border:1px solid #6cf;
+	
 }
 .form-text textarea:hover {
-    border:1px solid #aaa;
-	outline:2px;
-}
+  	border:1px solid #6cf;
+} */
 .form-text label {
     position: relative;
 }
