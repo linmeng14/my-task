@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task 19</title>
+	<style>
+		.container{
+			overflow: hidden;
+            zoom: 1;
+            border: 1px solid #000000;
+            height: 500px;
+            width: 100%;
+            margin-top:20px;
+		}
+		.box{
+			float: left;
+            height: 100%;
+            position: relative;
+            width:15px;
+            margin-right:3px;
+		}
+		.container .histogram{
+			position:absolute;
+			width:100%;
+			bottom:0;
+			background:#6cf;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="input-text">
+	<button>左侧进入</button>
+	<button>右侧进入</button>
+	<button>左侧删除</button>
+	<button>右侧删除</button>
+	<button>随机50</button>
+	<button>排序</button>
+	<div class="container">
+		<div class="box">
+			<div class="histogram"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

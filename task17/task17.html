@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 17</title>
+    <style>
+      .aqi-chart-wrap{
+            overflow: hidden;
+            zoom: 1;
+            border: 1px solid #000000;
+            height: 500px;
+            width: 100%;
+        }
+        .box{
+            float: left;
+            height: 100%;
+            position: relative;
+        }
+        .day{
+            width: 10px;
+            margin-right:4px;
+        }
+        .week{
+            width: 40px;
+            margin-right:4px;
+        }
+        .month{
+            width: 80px;
+            margin-right:4px;
+        }
+        .aqi-chart-wrap .histogram{
+            position:absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        /* p{
+          font-size:6px;
+          writing-mode: tb-rl;
+        } */
+    </style>
+  </head>
+<body>
+  <fieldset id="form-gra-time">
+    <legend>请选择日期粒度：</legend>
+    <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+    <label>周<input name="gra-time" value="week" type="radio"></label>
+    <label>月<input name="gra-time" value="month" type="radio"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>请选择查看的城市：</legend>
+    <select id="city-select">
+
+    </select>
+  </fieldset>
+
+  <div class="aqi-chart-wrap">
+    <div class="box">
+      <div class="histogram"></div>
+    </div>
+    <div class="box">
+      <div class="histogram"></div>
+    </div>
+    <div class="box">
+      <div class="histogram"></div>
+    </div>
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>

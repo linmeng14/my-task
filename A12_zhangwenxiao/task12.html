@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task 12</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		table{
+			margin:20px 0 0 20px;
+		}
+		table thead{
+			background:#000;
+			color:#fff;
+		}
+		tbody tr:nth-child(1),tbody tr:nth-child(2),tbody tr:nth-child(3){
+			color:red;
+		}
+		tbody tr:nth-child(odd){
+			background:#fff;
+		}
+		tbody tr:nth-child(even){
+			background:#ccc;
+		}
+		.text-input{
+			margin-top:20px;
+			margin-left: 20px;
+			font-size:12px;
+		}
+		.text-input input{
+			border-radius:3px;
+			width:100px;
+			transition:width 1s;
+		}
+		.text-input input:focus{
+			width:150px;
+		}
+		section{
+			margin: 20px;
+		}
+
+		.target{
+			position: relative;
+			width: 300px;
+   			height: 200px;
+    		overflow: hidden;
+    		display: inline-block;
+    		list-style: none;
+		}
+		#target p{
+			font-size:16px;
+			font-weight:bold;
+		}
+		.target .banner{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 300px;
+			height: 200px;
+			float: left;
+			display: inline-block;
+			z-index: 1;
+		}
+		/*animation achieve turn*/
+		@keyframes myturn{
+		0% {left: 100%;}
+		100% {left: 0;}
+		}
+		.target .banner:target{
+			z-index: 2;
+			animation-name:myturn;
+			animation-duration:.5s;
+			animation-fill-mode:forwards;
+		}
+		.target .banner1{
+			left: 0;
+			background-color: purple;
+		}
+		.target .banner2{
+			background-color: orange;
+		}
+		.target .banner3{
+			background-color: lightgreen;
+		}
+		.controller{
+			position: relative;
+			right: -190px;
+			top: -35px;
+			z-index: 2;
+		}
+		.controller a{
+			width: 30px;
+			height: 30px;
+			text-decoration: none;
+			text-align: center;
+			color: white;
+			line-height: 30px;
+			background-color: black;
+			opacity: 0.5;
+			display: inline-block;
+		}
+
+		.target:before, .target:after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td>排名</td>
+				<td>网站</td>
+				<td>热度</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1.</td>
+				<td>百度前端技术学院</td>
+				<td>13000</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td>百度前端技术学院</td>
+				<td>12000</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>百度前端技术学院</td>
+				<td>11000</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>百度前端技术学院</td>
+				<td>10000</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>百度前端技术学院</td>
+				<td>9000</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td>百度前端技术学院</td>
+				<td>8000</td>
+			</tr>
+			<tr>
+				<td>7.</td>
+				<td>百度前端技术学院</td>
+				<td>7000</td>
+			</tr>
+			<tr>
+				<td>8.</td>
+				<td>百度前端技术学院</td>
+				<td>6000</td>
+			</tr>
+			<tr>
+				<td>9.</td>
+				<td>百度前端技术学院</td>
+				<td>5000</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>百度前端技术学院</td>
+				<td>4000</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="text-input">聚焦状态下输入框变长:<input type="text"></div>
+
+	<!-- 模仿他人，此块不熟 -->
+	<section id="target">
+			<p>CSS :target 选择器</p>
+			<ul class="target">
+				<li class="banner banner1" id="banner1"></li>
+				<li class="banner banner2" id="banner2"></li>
+				<li class="banner banner3" id="banner3"></li>
+			</ul>
+			<div class="controller">
+				<a href="#banner1">1</a>
+				<a href="#banner2">2</a>
+				<a href="#banner3">3</a>
+			</div>
+		</section>
+</body>
+</html>
