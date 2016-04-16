@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task 20</title>
+	<style>
+		#input-text{
+			height:50px;
+			width:200px;
+		}
+		#select-text{
+			width:100px;
+		}
+		div{
+			width:100%;
+			margin-top:20px;
+		}
+		div span{
+			display:block;
+			float:left;
+			width:100px;
+			height:100px;
+			background:#6cf;
+			text-align:center;
+			line-height:40px;
+			margin-right: 10px;
+			margin-top:10px;
+			word-wrap:break-word;
+		}
+		.gray{
+			background:#000;
+			font-size:20px;
+			color:#fff;
+		}
+		div span:hover{
+			cursor:pointer;
+			background:#9cf;
+		}
+		.title{
+			position:absolute; 
+			width:400px;
+			top:0;
+			right:50px;
+			margin:0;
+		}
+		.title h3{
+			font-size:16px;
+			text-align: center;
+			font-family: "楷体";
+			margin:0;
+		}
+		.title p{
+			font-size:13px;
+			color:#aaa;
+			margin-bottom:0;
+			padding-top:0;
+		}
+	</style>
+</head>
+<body>
+	<textarea name="" id="input-text" cols="30" rows="10" placeholder="please input"></textarea>
+	<button>左侧进入</button>
+	<button>右侧进入</button>
+	<button>左侧删除</button>
+	<button>右侧删除</button>
+	<input type="text" id="select-text"><button id="selectbtn">查询</button>
+	<div>
+			
+	</div>
+	<div class="title">
+		<h3>说明</h3>
+		<p>1.您可以在左边输入数字，中文，英文，以逗号，回车键，空格隔开</p>
+		<p>2.点击右边的查询按钮将会匹配搜索框中的元素</p>
+		<p>3.下面四个为示例元素</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
