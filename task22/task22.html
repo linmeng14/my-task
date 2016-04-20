@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task 22</title>
+	<!-- 借鉴We Are The World 团队 -->
+	<!-- 树这一块理解太差 -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- 此处为二叉树的结构 -->
+	<div class="root">
+		<div class="son-1">
+			<div class="son-2">
+				<div class="son-3"></div>
+				<div class="son-3"></div>
+			</div>
+			<div class="son-2">
+				<div class="son-3"></div>
+				<div class="son-3"></div>
+			</div>
+		</div>
+		<div class="son-1">
+			<div class="son-2">
+				<div class="son-3"></div>
+				<div class="son-3"></div>
+			</div>
+			<div class="son-2">
+				<div class="son-3"></div>
+				<div class="son-3"></div>
+			</div>
+		</div>
+	</div>
+	<input type="button" value="前序遍历">
+	<input type="button" value="中序遍历">
+	<input type="button" value="后序遍历">
+	<span>遍历速度</span>
+	<!-- <select name="selspeed" id="speed">
+		<option value="100">快</option>
+		<option value="300">中</option>
+		<option value="500">慢</option>
+	</select> -->
+	<input type="number" value="500" id="speed" step="100" min="100" max="1500">
+	<script src="public.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

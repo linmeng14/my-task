@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task 23</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="root"><span>subject</span>
+		<div class="son-1 big1"><span>computer</span>
+			<div class="son-2 big2"><span>software</span>
+				<div class="son-3 sam3"><span>test</span></div>
+				<div class="son-3 big3"><span>develop</span>
+					<div class="son-4"><span>front</span></div>
+					<div class="son-4"><span>after</span></div>
+					<div class="son-4"><span>full</span></div>
+				</div>
+			</div>
+			<div class="son-2 sam2"><span>hardware</span></div>
+			<div class="son-2 mid2"><span>network</span>
+				<div class="son-3 mid3"><span>agreement</span>
+					<div class="son-4"><span>http</span></div>
+				</div>
+				<div class="son-3 sam3"><span>port</span></div>
+			</div>
+		</div>
+		<div class="son-1 big1"><span>math</span>
+			<div class="son-2 big2"><span>physical</span>
+				<div class="son-3 sam3"><span>high</span></div>
+				<div class="son-3 sam3"><span>line</span></div>
+				<div class="son-3 sam3"><span>random</span></div>
+			</div>
+			<div class="son-2 mid2"><span>applied</span>
+				<div class="son-3 mid3"><span>chemistry</span>
+					<div class="son-4"><span>element</span></div>
+				</div>
+				<div class="son-3 sam3"><span>life</span></div>
+			</div>
+		</div>
+		<div class="son-1 sam1"><span>english</span></div>
+	</div>
+	<fieldset id="choose">
+		<legend>控制面板</legend>
+		<input type="button" value="深度优先搜索" id="preBtn">
+		<input type="button" value="广度优先搜索" id="inBtn">
+		<label for="">遍历速度:</label><input type="number" value="500" id="speed" step="100" min="100" max="1000"><br>
+		<label for="search">此处输入您想查找的内容，然后点击按钮:<input type="text" value="" id="checkout"></label>
+	</fieldset>
+	<script src="public.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

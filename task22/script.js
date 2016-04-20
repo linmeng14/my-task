@@ -1,0 +1,83 @@
+(function(){
+	var treeWalker=new TreeWalker(),
+		btns=document.querySelectorAll('input'),
+		preBtn=btns[0],
+		inBtn=btns[1],
+		postBtn=btns[2],
+		root=document.querySelector(".root");
+	addHandler(preBtn,"click",function(){
+		treeWalker.preOrder(root);
+		treeWalker.animation();
+	});
+	addHandler(inBtn,"click",function(){
+		treeWalker.inOrder(root);
+		treeWalker.animation();
+	});
+	addHandler(postBtn,"click",function(){
+		treeWalker.postOrder(root);
+		treeWalker.animation();
+	});
+})();
+
+// 构造二叉树
+function TreeWalker(){
+	this.stack=[];
+	this.root=document.querySelector(".root");
+	//前序遍历
+	this.preOrder=function(node){
+		this.stack.push(node);
+		if(node.firstElementChild){
+			this.preOrder(node.firstElementChild);
+		}
+		if(node.lastElementChild){
+			this.preOrder(node.lastElementChild);
+		}
+	};
+	//中序遍历
+	this.inOrder=function(node){
+		if(node.firstElementChild){
+			this.inOrder(node.firstElementChild);
+		}
+		this.stack.push(node);
+		if(node.lastElementChild){
+			this.inOrder(node.lastElementChild);
+		}
+	};
+	//后序遍历
+	this.postOrder=function(node){
+		if(node.firstElementChild){
+			this.postOrder(node.firstElementChild);
+		}
+		if(node.lastElementChild){
+			this.postOrder(node.lastElementChild);
+		}
+		this.stack.push(node);
+	};
+	//动画效果
+	//判断树的长度是否遍历完成，用判断不断变换背景颜色，当到达最后一个节点
+	//将颜色还原
+	this.animation=function(){
+		var stack=this.stack,
+			speed=document.querySelector("#speed"),
+			iter=0,timer,self=this;
+	self.stack=[];
+	if(!self.isWalking){
+		self.isWalking=true;
+		stack[iter].style.backgroundColor="#6cf";
+		//stack[iter].style.backgroundColor = "#F125C2";
+		timer=setInterval(function(){
+			if(iter==stack.length-1){
+			stack[iter].style.backgroundColor="#fff";
+			self.isWalking=false;
+			clearInterval(timer);
+		}
+		else{
+			++iter;
+			stack[iter-1].style.backgroundColor="#fff";
+			stack[iter].style.backgroundColor="#6cf";
+			//stack[iter].style.backgroundColor = "#F125C2";
+			}
+		},speed.value);
+	}
+	};
+}

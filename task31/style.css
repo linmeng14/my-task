@@ -1,0 +1,71 @@
+*{
+	font-family: '微软雅黑';   
+}
+.wrap{
+	width: 550px;
+	margin:100px 0 0 100px;
+}
+.input-group{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.input-radio{
+	display: inline;
+	position: relative;
+}
+.input-radio:first-child{
+	margin-right: 110px;
+}
+.sc{
+	margin-top: 20px;
+	display:none;
+}
+.sc label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 30px;
+}
+.sc select{
+	width: 140px;
+	outline: none;
+	padding: 5px;
+	border: 1px solid #CDCDCD;
+	border-radius: 4px;
+	-webkit-transition: all .3s;
+		 -o-transition: all .3s;
+			transition: all .3s;
+}
+.sc select:last-child{
+	width: 200px;
+	margin-left: 40px;
+}
+.sc select:focus{
+	border-color: #3396FE;
+	box-shadow: 0 0 3px #3396FE;
+}
+.work{
+	margin-top: 20px;
+	margin-left:80px;
+	display: none;
+}
+.work label{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+	margin-right: 20px;
+}
+.work input{
+	width: 300px;
+	outline: none;
+	padding: 5px 10px;
+	border: 1px solid #CDCDCD;
+	border-radius: 4px;
+	-webkit-transition: all .3s;
+		 -o-transition: all .3s;
+			transition: all .3s;
+}
+.work input:focus{
+	border-color: #3396FE;
+	box-shadow: 0 0 3px #3396FE;
+}

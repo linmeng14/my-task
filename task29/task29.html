@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task29 表单验证</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			font: 16px "微软雅黑";
+		}
+		body{
+			width:100%;
+		}
+		label{
+			height:80px;
+			margin:10% 0  0 10%;
+			display:block;
+		}
+		label span{
+			margin-right:10px;
+		}
+		label input[type='text']{
+			width:300px;
+			height:40px;
+			border-radius:5px;
+			border:1px solid #ccc;
+			padding-left:10px;
+		}
+		label input[type='button']{
+			background:#2f79ba;
+			border:1px solid #fff;
+			border-radius:5px;
+			color:#fff;
+			width:100px;
+			height:45px;
+			margin-left:10px;
+		}
+		label input[type='button']:hover{
+			cursor:pointer;
+		}
+		#checkout{
+			margin-top:-10px;
+			padding-left:10%;
+			margin-left:40px;
+			color:#aaa;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<label><span>名称</span><input type="text"><input type="button" value="验证"></label>
+		<div id="checkout">
+		必填，长度为4-16个字符
+		</div>	
+	</form>
+	<script>
+		var oinput=document.getElementsByTagName('input')[0];
+			obtn=document.getElementsByTagName('input')[1],
+			check=document.getElementById('checkout');
+		function checkOut(){
+			var value=oinput.value;
+			if(!value||value==""){
+				check.innerHTML="姓名不能为空";
+				check.style.color="red";
+				oinput.style.border="1px solid red";
+			}
+			else if(value.length<4||value.length>16){
+				check.innerHTML="姓名不符合格式";
+				check.style.color="red";
+				oinput.style.border="1px solid red";
+			}
+			else{
+				check.innerHTML="名称格式正确";
+				check.style.color="green";
+				oinput.style.border="1px solid green";
+			}
+		}
+		obtn.onclick=function(){
+			checkOut();
+		}
+	</script>
+</body>
+</html>

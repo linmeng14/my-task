@@ -1,0 +1,134 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#000;
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, sans-serif;
+}
+#canvas{
+	float:left;
+	outline:1px solid #6cf;
+}
+main{
+	margin:10px auto;
+	width:1200px;
+	position:relative;
+}
+main:before,main:after{
+	content:"";
+	display:table;
+}
+main:after{
+	clear:both;
+}
+.show-wrap{
+	float:left;
+	width:400px;
+	height:800px;
+}
+.god-panel,.command-panel{
+	width:100%;
+	height:300px;
+	outline:1px solid #6cf;
+}
+.command-console{
+	width:100%;
+	height:200px;
+	outline:1px solid #6cf;
+}
+.show-wrap h3{
+	width:100%;
+	font-size:20px;
+	line-height:30px;
+	text-align:center;
+	color:#6cf;
+	border-bottom:1px solid #6cf;
+}
+.god-message,.command-message{
+	overflow-x: hidden;
+	overflow-y: auto;
+	width:400px;
+	height:269px;
+}
+.show-wrap p{
+	margin-top:5px;
+	padding-left:15px;
+	font-size:15px;
+	color:#6cf;
+}
+p.warning{
+	color:red;
+}
+.command-message div{
+	margin-top:30px;
+	text-align:center;
+	/*margin-left:-20px;*/
+}
+.command-message span{
+	padding-right:30px;
+	color:#6cf;
+	font-size:20px;
+}
+.command-console div{
+	margin-top:15px;
+}
+.command-console span{
+	padding-left:25px;
+	color:#6cf;
+	font-size:15px;
+}
+.command-console input{
+	margin-left:10px;
+	padding:5px;
+	background:#000;
+	color:#6cf;
+	outline:1px solid #6cf;
+	border:none;
+	cursor:pointer;
+	transition:all 0.3s ease-in-out;
+}
+.command-console input:hover{
+	background:#6cf;
+	color:#000;
+}
+.create-wrap{
+	display:none;
+	position:absolute;
+	top:30%;
+	left:30%;
+	transform:translate(-50%-50%);
+	z-index:10;
+	width:500px;
+	height:300px;
+	background:#6cf;
+	border:2px solid #aaa;
+	color:#fff;
+}
+.create-wrap h4{
+	width:100%;
+	font-size:20px;
+	line-height:30px;
+	text-align:center;
+	border-bottom:1px solid #aaa;
+	cursor:move;
+}
+.power,.energy{
+	margin:20px 0;
+	padding-left:40px;
+}
+.power input,.energy input{
+	margin-left:40px;
+}
+.btns{
+	text-align:center;
+}
+.btns input{
+	padding:5px;
+	background:#6cf;
+	color:#fff;
+	word-spacing:20px;
+	margin:0 10px;
+	border:1px solid #fff;
+
+}

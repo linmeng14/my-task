@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+}
+form{
+	margin:50px 0 0 100px;
+}
+label{
+	height:80px;
+	display:block;
+}
+label span{
+	margin-right:10px;
+	text-align:right;
+	font-size:16px;
+	font-weight:bold;
+}
+#mm{
+	margin-left: -2em;
+}
+label input[type='text'],label input[type='password']{
+	width:400px;
+	height:40px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	padding-left:10px;
+}
+form input[type='button']{
+	background:#2f79ba;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius:5px;
+	width:100px;
+	height:40px;
+	margin-left:350px;
+}
+form input[type='button']:hover{
+	cursor:pointer;
+}
+form p{
+	margin-top:-30px;
+	padding-left:30px;
+	margin-left:40px;
+	padding-bottom:10px;
+	color:#aaa;
+}
