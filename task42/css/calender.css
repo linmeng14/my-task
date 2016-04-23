@@ -1,0 +1,87 @@
+#month,#year{
+	display:inline-block;
+	width:70px;
+	height:30px;
+	margin:5px;
+}
+#lastMon{
+	width:25px;
+	height:25px;
+	color:#6cf;
+	font-weight:bold;
+}
+#nextMon{
+	width:25px;
+	height:25px;
+	color:#6cf;
+	font-weight:bold;
+	position:relative;
+	left:190px;
+}
+#lastMon:hover,#nextMon:hover{
+	opacity:0.6;
+	cursor:pointer;
+}
+.daySelect{
+	font-family:"Arail";
+	width:226px;
+}
+.daySelect table{
+	border-collapse:collapse;
+	border:1px solid #ccc;
+}
+.daySelect th,td{
+	border:1px solid #eee;
+}
+.monAndYearSelect select{
+	display:inline-block;
+	text-align:center;
+	border:1px solid #ccc;
+	border-radius:5px;
+	margin-left: 20px;
+}
+.daySelect th,.daySelect td{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	font-weight:bold;
+	padding:5px;
+	text-align:center;
+}
+.currMonth:hover{
+	border-radius:5px;
+	background:#0966a8;
+	color:#fff;
+	cursor:pointer;
+	transition:all 0.5s ease-out;
+}
+.prevMonth,.nextMonth{
+	color:#ccc;
+}
+.currDate{
+	border-radius:5px;
+	background:#ccc;
+}
+#submitBtn{
+	background:#0D8FA9;
+}
+#cancel{
+
+}
+input[type='button']{
+	width:80px;
+	height:40px;
+	text-align:center;
+	margin:5px 10px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	background:transparent;
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	transition:all 0.5s ease-in-out;
+}
+input[type='button']:hover{
+	opacity:0.8;
+	cursor:pointer;
+}

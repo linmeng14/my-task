@@ -1,0 +1,64 @@
+html,body{
+	width:100%;
+	height:100%;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.wrap{
+	width:100%;
+	height:50%;
+}
+.container{
+	position:relative;
+}
+.container img{
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:0px;
+	left:230px;
+}
+.container img:hover{
+	opacity:0.5;
+}
+#caleSelect,#caleSelect2{
+	display:inline-block;
+	width:250px;
+	height:30px;
+	padding-left:10px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	transition: all 0.8s ease;
+}
+.contain{
+	position:relative;
+	margin-top: 50px;
+}
+.contain img{
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:0px;
+	left:230px;
+}
+.contain img:hover{
+	opacity:0.5;
+}
+div.prompt{
+	position:absolute;
+	top:20px;
+	right:200px;
+}
+div.prompt h3{
+	text-align:center;
+	font-weight:bold;
+}
+div.prompt p{
+	height:20px;
+	line-height:20px;
+	font-family:"微软雅黑";
+	font-size:12px;
+}
+div.prompt p:last-child{
+	text-indent:2em;
+}

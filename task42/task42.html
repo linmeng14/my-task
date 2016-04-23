@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task42 日历组件(三)</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/calender.css">
+	<script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<input type="text" placeholder="点击选择日期" id="caleSelect">
+			<img id="calender" src="images/calender.png"></img>
+		</div>
+		<div class="contain">
+			<input type="text" placeholder="点击选择日期" id="caleSelect2">
+			<img id="calender2" src="images/calender.png"></img>
+		</div>
+	</div>
+	<div class="prompt">
+		<h3>日历插件使用方法</h3>
+		<p>1.插件调用格式:$.calender(selector,caleSelect,yearNum,isPeriod,stride)</p>
+		<p>2.selector为添加到的容器</p>
+		<p>3.caleSelect为日期显示框</p>
+		<p>4.isPeriod为可设置是否选择一个日期区间,(true为选择区间,false为选择具体日期)</p>
+		<p>5.yearNum为设置的年份区间,从当前年份的-yearNum至当前年份的+yearNum</p>
+		<p>6.stride为选择日期区间的跨度</p>
+		<p>示例如下:</p>
+		<p>
+			选择具体日期:$.calender(".container","#caleSelect",15,false);<br>
+			选择日期区间:$.calender(".container","#caleSelect"15,true,10);
+		</p>
+	</div>
+	<script type="text/javascript" src="script/util.js"></script>
+	<script type="text/javascript" src="script/calender.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
+</body>
+</html>
