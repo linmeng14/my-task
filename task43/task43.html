@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task43 多功能相册之拼图布局</title>
+	<link rel="stylesheet" type="text/css" href="css/photo_layout.css">
+	<style type="text/css">
+		body{
+			margin:0;
+			padding:40px;
+			text-align:center;
+			background:#ddd;
+		}
+		body>div{
+			margin:0 auto;
+			margin-bottom:40px;
+			box-shadow:0 20px 20px -10px rgba(0, 0, 0, 0.4);
+		}
+	</style>
+	<script type="text/javascript" src="script/photo-layout.js"></script>
+</head>
+<body>
+	<div id="pic_1">
+		<img src="images/img1.jpg" alt="Scenery">
+	</div>
+	<div id="pic_2">
+		<img src="images/img1.jpg" alt="Scenery">
+		<img src="images/img2.jpg" alt="Scenery">
+	</div>
+	<div id="pic_3">
+		<img src="images/img1.jpg" alt="Scenery">
+		<img src="images/img2.jpg" alt="Scenery">
+		<img src="images/img3.jpg" alt="Scenery">
+	</div>
+	<div id="pic_4">
+		<img src="images/img1.jpg" alt="Scenery">
+		<img src="images/img2.jpg" alt="Scenery">
+		<img src="images/img3.jpg" alt="Scenery">
+		<img src="images/img4.jpg" alt="Scenery">
+	</div>
+	<div id="pic_5">
+		<img src="images/img1.jpg" alt="Scenery">
+		<img src="images/img2.jpg" alt="Scenery">
+		<img src="images/img3.jpg" alt="Scenery">
+		<img src="images/img4.jpg" alt="Scenery">
+		<img src="images/img5.jpg" alt="Scenery">
+	</div>
+	<div id="pic_6">
+		<img src="images/img1.jpg" alt="Scenery">
+		<img src="images/img2.jpg" alt="Scenery">
+		<img src="images/img3.jpg" alt="Scenery">
+		<img src="images/img4.jpg" alt="Scenery">
+		<img src="images/img5.jpg" alt="Scenery">
+		<img src="images/img6.jpg" alt="Scenery">
+	</div>
+	<input type="button" id="gridBtn" value="六图网格全屏">
+	<script type="text/javascript">
+		var p1=puzzlePhoto({
+			wrap:'#pic_1',
+			width:'960px'
+		});
+		var p2=puzzlePhoto({
+			wrap:'#pic_2',
+			height:'400px'
+		});
+		var p3=puzzlePhoto({
+			wrap:'#pic_3',
+			height:'400px'
+		});
+		var p4=puzzlePhoto({
+			wrap:'#pic_4',
+			height:'400px'
+		});
+		var p5=puzzlePhoto({
+			wrap:'#pic_5',
+			height:'600px'
+		});
+		var p6=puzzlePhoto({
+			wrap:'#pic_6',
+			height:'600px'
+		});
+		var gridBtn=document.getElementById('gridBtn');
+		gridBtn.addEventListener('click',function(){
+			p6.grid(true);
+		})
+	</script>
+</body>
+</html>
